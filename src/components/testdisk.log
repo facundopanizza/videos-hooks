@@ -1,0 +1,341 @@
+
+
+Tue Jul  7 12:00:31 2020
+Command line: TestDisk
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 5.7.7-arch1-1 (#1 SMP PREEMPT Wed, 01 Jul 2020 14:53:16 +0000) x86_64
+Compiler: GCC 10.1
+ext2fs lib: 1.45.6, ntfs lib: libntfs-3g, reiserfs lib: 0.3.0.5, ewf lib: none, curses lib: ncurses 6.2
+User is not root!
+Hard disk list
+
+
+TestDisk exited normally.
+Using locale 'en_US.UTF-8'.
+
+
+Tue Jul  7 12:00:31 2020
+Command line: TestDisk /debug
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 5.7.7-arch1-1 (#1 SMP PREEMPT Wed, 01 Jul 2020 14:53:16 +0000) x86_64
+Compiler: GCC 10.1
+ext2fs lib: 1.45.6, ntfs lib: libntfs-3g, reiserfs lib: 0.3.0.5, ewf lib: none, curses lib: ncurses 6.2
+/dev/sda: LBA, HPA, LBA48 support
+/dev/sda: size       937703088 sectors
+/dev/sda: user_max   937703088 sectors
+/dev/sda: native_max 937703088 sectors
+/dev/sdb: LBA, HPA, LBA48, DCO support
+/dev/sdb: size       1953525168 sectors
+/dev/sdb: user_max   1953525168 sectors
+/dev/sdb: native_max 1953525168 sectors
+/dev/sdc: LBA, HPA, LBA48, DCO support
+/dev/sdc: size       1953525168 sectors
+/dev/sdc: user_max   1953525168 sectors
+/dev/sdc: native_max 1953525168 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 480 GB / 447 GiB - CHS 58369 255 63, sector size=512 - ADATA SU630, S/N:2J2720151517, FW:V8X01c86
+Disk /dev/sdb - 1000 GB / 931 GiB - CHS 121601 255 63, sector size=512 - WDC WD10EZEX-08WN4A0, S/N:WD-WCC6Y3HH770K, FW:02.01A02
+Disk /dev/sdc - 1000 GB / 931 GiB - CHS 121601 255 63, sector size=512 - WDC WD10EZEX-08Y20A0, S/N:WD-WCC3F3PLEDC7, FW:02.01A02
+Disk /dev/sdd - 30 GB / 28 GiB - CHS 29510 64 32, sector size=512 - Kingston DataTraveler 3.0
+
+Partition table type (auto): EFI GPT
+Disk /dev/sda - 480 GB / 447 GiB - ADATA SU630
+Partition table type: EFI GPT
+
+Interface Advanced
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=937703087 (expected 937703087)
+hdr_lba_start=34
+hdr_lba_end=937703054
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+4f68bce3 e8cd 4db1 96 e7 fb ca f9 84 b7 09
+ 1 P EFI System                  2048    1050623    1048576
+4f68bce3 e8cd 4db1 96 e7 fb ca f9 84 b7 09
+ 2 P Unknown                  1050624  126879743  125829120
+ 3 P Linux Swap             126879744  143656959   16777216
+ 4 P Linux /home            143656960  937703054  794046095
+4f68bce3 e8cd 4db1 96 e7 fb ca f9 84 b7 09
+4f68bce3 e8cd 4db1 96 e7 fb ca f9 84 b7 09
+4f68bce3 e8cd 4db1 96 e7 fb ca f9 84 b7 09
+4f68bce3 e8cd 4db1 96 e7 fb ca f9 84 b7 09
+4f68bce3 e8cd 4db1 96 e7 fb ca f9 84 b7 09
+4f68bce3 e8cd 4db1 96 e7 fb ca f9 84 b7 09
+4f68bce3 e8cd 4db1 96 e7 fb ca f9 84 b7 09
+4f68bce3 e8cd 4db1 96 e7 fb ca f9 84 b7 09
+
+Analyse Disk /dev/sda - 480 GB / 447 GiB - CHS 58369 255 63
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=937703087 (expected 937703087)
+hdr_lba_start=34
+hdr_lba_end=937703054
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+4f68bce3 e8cd 4db1 96 e7 fb ca f9 84 b7 09
+Current partition structure:
+ 1 P EFI System                  2048    1050623    1048576
+ 2 P Unknown                  1050624  126879743  125829120
+ 3 P Linux Swap             126879744  143656959   16777216
+ 4 P Linux /home            143656960  937703054  794046095
+
+search_part()
+Disk /dev/sda - 480 GB / 447 GiB - CHS 58369 255 63
+FAT12 at 0/0/41
+FAT1 : 1-5
+FAT2 : 6-10
+start_rootdir : 11
+Data : 43-1599
+sectors : 1600
+cluster_size : 1
+no_of_cluster : 1557 (2 - 1558)
+fat_length 5 calculated 5
+heads/cylinder 1 (FAT) != 255 (HD)
+
+FAT12 at 0/0/41
+     MS Data                       40       1639       1600 [EFISYS]
+     FAT12, blocksize=512, 819 KB / 800 KiB
+FAT32 at 0/32/33
+FAT1 : 32-1055
+FAT2 : 1056-2079
+start_rootdir : 2080 root cluster : 2
+Data : 2080-1048575
+sectors : 1048576
+cluster_size : 8
+no_of_cluster : 130812 (2 - 130813)
+fat_length 1024 calculated 1022
+set_FAT_info: name from BS used
+
+FAT32 at 0/32/33
+FAT: cluster=2(0x2), pos=4128
+     EFI System                  2048    1050623    1048576 [EFI System Partition] [NO NAME]
+     FAT32, blocksize=4096, 536 MB / 512 MiB
+
+recover_EXT2: s_block_group_nr=0/480, s_mnt_count=51/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 15728640
+recover_EXT2: part_size 125829120
+Filesystem created: Thu Jun 18 16:11:51 2020
+Last mount time:    Tue Jul  7 11:24:14 2020
+     Linux filesys. data      1050624  126879743  125829120
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 64 GB / 60 GiB
+     Linux Swap             126879744  143656943   16777200
+     SWAP2 version 1, pagesize=4096, 8589 MB / 8191 MiB
+
+recover_EXT2: s_block_group_nr=0/3029, s_mnt_count=51/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 99255761
+recover_EXT2: part_size 794046088
+Filesystem created: Thu Jun 18 16:11:19 2020
+Last mount time:    Tue Jul  7 11:24:18 2020
+     Linux filesys. data    143656960  937703047  794046088
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 406 GB / 378 GiB
+
+Results
+   P MS Data                       40       1639       1600 [EFISYS]
+     FAT12, blocksize=512, 819 KB / 800 KiB
+   P EFI System                  2048    1050623    1048576 [EFI System Partition] [NO NAME]
+     FAT32, blocksize=4096, 536 MB / 512 MiB
+   P Linux filesys. data      1050624  126879743  125829120
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 64 GB / 60 GiB
+   P Linux Swap             126879744  143656943   16777200
+     SWAP2 version 1, pagesize=4096, 8589 MB / 8191 MiB
+   P Linux filesys. data    143656960  937703047  794046088
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 406 GB / 378 GiB
+
+Hint for advanced users: dmsetup may be used if you prefer to avoid rewriting the partition table for the moment:
+echo "0 1600 linear /dev/sda 40" | dmsetup create test0
+echo "0 1048576 linear /dev/sda 2048" | dmsetup create test1
+echo "0 125829120 linear /dev/sda 1050624" | dmsetup create test2
+echo "0 16777200 linear /dev/sda 126879744" | dmsetup create test3
+echo "0 794046088 linear /dev/sda 143656960" | dmsetup create test4
+
+interface_write()
+ 1 P MS Data                       40       1639       1600 [EFISYS]
+ 2 P EFI System                  2048    1050623    1048576 [EFI System Partition] [NO NAME]
+ 3 P Linux filesys. data      1050624  126879743  125829120
+ 4 P Linux Swap             126879744  143656943   16777200
+ 5 P Linux filesys. data    143656960  937703047  794046088
+
+
+dir_partition inode=2
+   P Linux filesys. data    143656960  937703047  794046088
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 406 GB / 378 GiB
+Directory /
+       2 drwxr-xr-x     0      0      4096 27-Jun-2020 16:22 .
+       2 drwxr-xr-x     0      0      4096 27-Jun-2020 16:22 ..
+      11 drwx------     0      0     16384 18-Jun-2020 16:11 lost+found
+ 15204353 drwx--x---  1000   1000      4096  7-Jul-2020 11:55 facundo
+ 4456449 drwxr-xr-x     0      0      4096 27-Jun-2020 16:23 timeshift
+
+dir_partition inode=15204353
+   P Linux filesys. data    143656960  937703047  794046088
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 406 GB / 378 GiB
+Directory /facundo
+ 15204353 drwx--x---  1000   1000      4096  7-Jul-2020 11:55 .
+       2 drwxr-xr-x     0      0      4096 27-Jun-2020 16:22 ..
+ 15204354 -rw-r--r--  1000   1000        57 22-May-2020 09:29 .bash_profile
+ 15204355 -rw-r--r--  1000   1000       141 22-May-2020 09:29 .bashrc
+ 15204356 -rw-r--r--  1000   1000        21 22-May-2020 09:29 .bash_logout
+ 15204357 -rw-------  1000   1000      1029  5-Jul-2020 00:50 .bash_history
+ 15204359 -rw-------  1000   1000        57  7-Jul-2020 11:24 .Xauthority
+ 15204666 -rw-r--r--  1000   1000        21  5-Jul-2020 10:41 .dmrc
+ 15204360 -rw-------  1000   1000      1303  7-Jul-2020 11:59 .xsession-errors
+ 15204361 drwxr-xr-x  1000   1000      4096  5-Jul-2020 17:11 .cache
+ 15204363 drwxr-xr-x  1000   1000      4096  6-Jul-2020 14:53 .config
+ 15205707 -rw-------  1000   1000     22369  5-Jul-2020 00:50 .viminfo
+ 15204358 -rw-------  1000   1000      9803  7-Jul-2020 11:06 .xsession-errors.old
+ 15204380 drwx------  1000   1000      4096 26-Jun-2020 12:08 .nv
+ 15204389 drwxr-xr-x  1000   1000      4096 18-Jun-2020 18:47 .local
+ 15204392 drwxr-xr-x  1000   1000      4096 18-Jun-2020 17:40 .screenlayout
+ 15204394 drwxr-xr-x  1000   1000      4096 18-Jun-2020 19:51 .vim
+ 15204402 drwx------  1000   1000      4096 26-Jun-2020 17:29 .mozilla
+ 15205366 drwx------  1000   1000      4096  2-Jul-2020 13:31 .w3m
+ 15335689 drwx------  1000   1000      4096 18-Jun-2020 17:06 .pki
+ 15337220 drwx--x---  1000   1000      4096  7-Jul-2020 11:27 Downloads
+ 15335609 drwxr-xr-x  1000   1000      4096 18-Jun-2020 17:35 .dotfiles
+ 15337295 drwxr-xr-x  1000   1000      4096 18-Jun-2020 17:35 .wallpapers
+ 15204398 -rwxr-xr--  1000   1000        80  7-Jul-2020 11:24 .fehbg
+ 15336278 drwxr-xr-x  1000   1000      4096 18-Jun-2020 17:51 .vscode-oss
+ 16515186 drwxr-xr-x  1000   1000      4096 18-Jun-2020 18:31 .nvim
+ 16515213 drwx------  1000   1000      4096  3-Jul-2020 18:29 .ssh
+ 15209229 -rw-r--r--  1000   1000       380  4-Jul-2020 14:20 .wget-hsts
+ 15204595 drwxr-xr-x  1000   1000      4096  7-Jul-2020 11:54 code
+ 16515880 drwxr-xr-x  1000   1000      4096 18-Jun-2020 22:43 .dotnet
+ 16515897 drwxr-xr-x  1000   1000      4096 22-Jun-2020 10:59 .templateengine
+ 16515938 drwxr-xr-x  1000   1000      4096 18-Jun-2020 19:22 .omnisharp
+ 15209199 drwxr-xr-x  1000   1000      4096 18-Jun-2020 19:27 .yarn
+ 15209325 drwxr-xr-x  1000   1000      4096  7-Jul-2020 11:03 .npm
+ 15995368 drwxr-xr-x  1000   1000      4096 18-Jun-2020 19:43 .nuget
+ 15204367 drwxr-xr-x  1000   1000      4096 18-Jun-2020 20:46 .mono
+ 19007720 drwxr-xr-x  1000   1000      4096 26-Jun-2020 17:29 Sync
+ 19400813 drwxr-xr-x  1000   1000      4096 19-Jun-2020 09:50 Libros
+ 19531055 drwxr-xr-x  1000   1000      4096 27-Jun-2020 14:58 Books
+ 16517328 drwxr-xr-x  1000   1000      4096  4-Jul-2020 16:57 .steam
+ 15204644 lrwxrwxrwx  1000   1000        32  4-Jul-2020 16:04 .steampath
+ 15206506 lrwxrwxrwx  1000   1000        30  4-Jul-2020 16:04 .steampid
+ 15211075 -rw-------  1000   1000       256 19-Jun-2020 13:30 .pulse-cookie
+ 15211571 drwxr-xr-x  1000   1000      4096 22-Jun-2020 14:00 .cargo
+ 16520812 drwxr-xr-x  1000   1000      4096  4-Jul-2020 16:00 Virtual Machines
+ 16520261 drwx------  1000   1000      4096 19-Jun-2020 14:51 .gnome2
+ 16520262 drwxr-xr-x  1000   1000      4096 19-Jun-2020 14:53 .shutter
+ 20322501 drwxr-xr-x  1000   1000      4096 26-Jun-2020 20:07 Desktop
+ 18220695 drwxr-xr-x  1000   1000      4096  7-Jul-2020 11:31 .session
+ 16784134 drwx------  1000   1000      4096 21-Jun-2020 18:49 .thumbnails
+ 22416456 drwxr-xr-x  1000   1000      4096 26-Jun-2020 14:26 Windows Server Share
+ 15210347 -rw-r--r--  1000   1000       620 19-Jun-2020 19:02 .xinitrc
+ 22676883 drwxr-xr-x  1000   1000      4096 24-Jun-2020 23:34 AudioBooks
+ 21768036 drwxr-xr-x  1000   1000      4096  4-Jul-2020 20:50 watch
+ 15204797 drwxr-xr-x  1000   1000      4096  4-Jul-2020 23:56 repos
+ 18612794 drwxr-xr-x  1000   1000      4096 20-Jun-2020 17:38 Videos
+ 16515848 drwxr-xr-x  1000   1000      4096 27-Jun-2020 12:20 Postman
+ 15214516 -rw-r--r--  1000   1000         0  4-Jul-2020 15:56 .Xresources
+ 15338958 drwxr-xr-x  1000   1000      4096  4-Jul-2020 19:59 .node-gyp
+ 15204867 drwx------  1000   1000      4096  5-Jul-2020 11:30 .gnupg
+ 15218568 -rw-r--r--  1000   1000    887782  5-Jul-2020 16:41 Cristina y los arrepentidos-ZKnlD3k9wWA.m4v
+ 16518666 drwxr-xr-x  1000   1000      4096 28-Jun-2020 16:30 Games
+ 15211289 -rw-r--r--  1000   1000       624 26-Jun-2020 14:23 .recently-used
+ 15864710 drwxr-xr-x  1000   1000      4096 28-Jun-2020 11:23 .subversion
+ 15204565 -rw-r--r--  1000   1000       116  7-Jul-2020 11:02 .yarnrc
+ 15218234 -rw-r--r--  1000   1000  40251202  5-Jul-2020 16:35 Hipocresías y mentiras de Alberto-OUWQSmanW2A.m4v
+ 19148026 drwx------     0      0      4096  7-Jul-2020 11:13 RECOVERDIR
+ 15211922 -rw-r--r--  1000   1000     51822  7-Jul-2020 11:57 testdisk.log
+ 15212852 -rw-r--r--     0      0       252  7-Jul-2020 11:44 backup.log
+ 15216215 -rw-r--r--  1000   1000        62 27-Jun-2020 12:28 .gitconfig
+ 15600666 drwxr-xr-x  1000   1000      4096 26-Jun-2020 14:49 prueba
+ 15209024 -rw-------  1000   1000        85  2-Jul-2020 12:42 .lesshst
+ 15219752 -rwxr-xr-x  1000   1000      4366 29-Jun-2020 09:47 .rtorrent.rc
+ 2359297 drwxr-xr-x  1000   1000      4096 28-Jun-2020 19:18 USB
+ 19278441 drwxr-xr-x  1000   1000      4096  7-Jul-2020 11:56 Recovery
+X15211650 -rw-------  1000   1000     56377  6-Jul-2020 11:39 2020-06-28 22-30-48.mkv
+X15214917 -rw-------  1000   1000      9814  6-Jul-2020 19:12 2020-06-28 22-33-10.mkv
+X15216276 drwxr-xr-x  1000   1000      4096  5-Jul-2020 15:40 2020-06-28 22-33-48.mkv
+X15216298 drwxr-xr-x  1000   1000      4096  5-Jul-2020 15:40 2020-06-28 22-33-48.m4v
+ 19402195 drwxr-xr-x  1000   1000      4096 29-Jun-2020 00:14 Osu!
+ 17309207 drwxr-xr-x  1000   1000      4096  4-Jul-2020 16:09 VirtualBox VMs
+X15212940 -rw-r--r--  1000   1000      5347  7-Jul-2020 11:02 Untitled.png
+X15214631 -rw-------  1000   1000      8875  5-Jul-2020 15:29 asdasdsad.png
+ 5636982 drwxr-xr-x  1000   1000      4096 30-Jun-2020 00:14 ISOS
+
+dir_partition inode=15204595
+   P Linux filesys. data    143656960  937703047  794046088
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 406 GB / 378 GiB
+Directory /facundo/code
+ 15204595 drwxr-xr-x  1000   1000      4096  7-Jul-2020 11:54 .
+ 15204353 drwx--x---  1000   1000      4096  7-Jul-2020 11:55 ..
+ 19148027 drwxr-xr-x     0      0      4096  7-Jul-2020 11:54 facundo
+X15213121 -rw-r--r--  1000   1000    473034  5-Jul-2020 13:10 React
+X15213122 drwxr-xr-x  1000   1000     36864  5-Jul-2020 13:28 with
+X15213123 drwxr-xr-x  1000   1000      4096  5-Jul-2020 13:28 Redux
+ 15212979 drwxr-xr-x  1000   1000      4096  7-Jul-2020 11:02 Modern React with Redux
+X15204620 -rw-------  1000   1000     14169  6-Jul-2020 13:56 yarn.lock
+X15205964 -rw-------  1000   1000     14795  7-Jul-2020 09:46 asdasd
+
+dir_partition inode=15212979
+   P Linux filesys. data    143656960  937703047  794046088
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 406 GB / 378 GiB
+Directory /facundo/code/Modern React with Redux
+ 15212979 drwxr-xr-x  1000   1000      4096  7-Jul-2020 11:02 .
+ 15204595 drwxr-xr-x  1000   1000      4096  7-Jul-2020 11:54 ..
+ 15338281 drwxr-xr-x  1000   1000      4096  4-Jul-2020 21:36 jsx
+ 15205776 drwxr-xr-x  1000   1000      4096  5-Jul-2020 13:28 components
+ 15213229 drwxr-xr-x  1000   1000      4096  5-Jul-2020 15:40 seasons
+ 15209023 drwxr-xr-x  1000   1000      4096  5-Jul-2020 22:28 pics
+ 15206352 drwxr-xr-x  1000   1000      4096  6-Jul-2020 14:09 videos
+ 15209126 drwxr-xr-x  1000   1000      4096  7-Jul-2020 11:02 widgets
+
+dir_partition inode=15206352
+   P Linux filesys. data    143656960  937703047  794046088
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 406 GB / 378 GiB
+Directory /facundo/code/Modern React with Redux/videos
+ 15206352 drwxr-xr-x  1000   1000      4096  6-Jul-2020 14:09 .
+ 15212979 drwxr-xr-x  1000   1000      4096  7-Jul-2020 11:02 ..
+ 15206438 -rw-r--r--  1000   1000       766  6-Jul-2020 14:09 package.json
+ 15212000 -rw-r--r--  1000   1000    473034  6-Jul-2020 13:43 yarn.lock
+ 15204715 drwxr-xr-x  1000   1000     36864  6-Jul-2020 14:09 node_modules
+ 15212165 -rw-r--r--  1000   1000      2884  6-Jul-2020 13:43 README.md
+ 15212233 drwxr-xr-x  1000   1000      4096  6-Jul-2020 13:43 .git
+ 15212172 drwxr-xr-x  1000   1000      4096  6-Jul-2020 13:43 public
+ 15212197 drwxr-xr-x  1000   1000      4096  6-Jul-2020 14:15 src
+ 15212171 -rw-r--r--  1000   1000       310  6-Jul-2020 13:43 .gitignore
+X15206456 -rw-r--r--  1000   1000    666830  6-Jul-2020 14:09 package-lock.json.1655102157
+ 15206456 -rw-r--r--  1000   1000    666830  6-Jul-2020 14:09 package-lock.json
+X15205584 -rw-------  1000   1000     20768  7-Jul-2020 09:45 social-tracking-protection-twitter-digest256.vlpset
+X15205616 -rw-------  1000   1000     17377  7-Jul-2020 09:45 social-tracking-protection-twitter-digest256.sbstore
+X15205876 -rw-------  1000   1000     16406  7-Jul-2020 09:46 social-track-digest256.vlpset
+X15205878 -rw-------  1000   1000     13768  7-Jul-2020 09:48 except-flashallow-digest256.vlpset
+X15205884 -rw-------  1000   1000     13519  7-Jul-2020 09:48 except-flash-digest256.vlpset
+X15205887 -rw-------  1000   1000     11895  7-Jul-2020 09:46 analytics-track-digest256.sbstore
+X15206368 -rw-------  1000   1000    136524  7-Jul-2020 11:25 base-cryptomining-track-digest256.vlpset
+X15206369 -rw-------  1000   1000     20728  7-Jul-2020 10:00 ads-track-digest256.sbstore
+X15206370 -rw-------  1000   1000     17467  7-Jul-2020 10:00 base-fingerprinting-track-digest256.vlpset
+X15206373 -rw-------  1000   1000     33164  6-Jul-2020 21:53 mozstd-trackwhite-digest256.sbstore
+X15206374 -rw-------  1000   1000     33503  6-Jul-2020 21:49 block-flash-digest256.sbstore
+X15206375 -rw-------  1000   1000    892029  6-Jul-2020 15:11 base-fingerprinting-track-digest256.sbstore
+X15206376 -rw-------  1000   1000    702871  6-Jul-2020 21:49 content-track-digest256.vlpset
+X15206377 -rw-------  1000   1000    556822  6-Jul-2020 13:37 allow-flashallow-digest256.vlpset
+X15206384 -rw-------  1000   1000    102632  7-Jul-2020 10:00 block-flash-digest256.vlpset
+X15206385 -rw-------  1000   1000    878307  6-Jul-2020 15:11 ads-track-digest256.vlpset
+X15206387 -rw-------  1000   1000    824163  6-Jul-2020 15:11 base-cryptomining-track-digest256.sbstore
+X15206388 -rw-------  1000   1000    876803  6-Jul-2020 15:11 social-tracking-protection-linkedin-digest256.vlpset
+X15206389 -rw-------  1000   1000      1274  7-Jul-2020 10:53 content-track-digest256.sbstore
+X15206390 -rw-------  1000   1000    743191  6-Jul-2020 21:53 except-flashsubdoc-digest256.vlpset
+X15206391 -rw-------  1000   1000   1444943  6-Jul-2020 16:15 social-tracking-protection-facebook-digest256.sbstore
+X15206393 -rw-------  1000   1000   1522211  6-Jul-2020 16:15 except-flash-digest256.sbstore
+X15206394 -rw-------  1000   1000     16369  6-Jul-2020 15:11 social-tracking-protection-linkedin-digest256.sbstore
+X15206401 -r--r--r--  1000   1000   1482796  6-Jul-2020 14:08 block-flashsubdoc-digest256.sbstore
+X15206404 -rw-------  1000   1000    464521  6-Jul-2020 21:53 google4
+X15206433 -rw-------  1000   1000    522004  6-Jul-2020 21:54 except-flashsubdoc-digest256.sbstore
+X15206438 -rw-r--r--  1000   1000       766  6-Jul-2020 14:09 social-track-digest256.sbstore
+X15206456 -rw-r--r--  1000   1000    666830  6-Jul-2020 14:09 google-trackwhite-digest256.vlpset
+X15206457 -rw-------  1000   1000    471439  6-Jul-2020 21
